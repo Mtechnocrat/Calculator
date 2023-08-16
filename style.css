@@ -1,0 +1,125 @@
+body{
+    width: 97vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 97vh;
+    background-color: hsl(222, 26%, 31%);
+    flex-direction: column;
+    font-family: 'Handjet', cursive;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+.head{
+    display: flex;
+    align-items: normal;
+    width: 27rem;
+    justify-content: space-between;
+    padding: 1rem;
+    color:white
+}
+.toggle{
+    display: flex;
+    background-color:hsl(224, 36%, 15%); 
+    border-radius: 1rem;
+    height:1.4rem;
+
+}
+.box{
+    width: 1rem;
+    background-color: red;
+    border-radius: 16px;
+    height: 1rem;
+    margin-top: 0.2rem;
+}
+.display{
+    width: 29rem;
+    height: 7rem;
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 1rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    color:white;
+}
+
+.display .previous-operand{
+    font-size: 1.5rem;
+}
+.display .current-operand{
+    font-size: 2.5rem;
+}
+.grid-container{
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: hsl(224, 36%, 15%,0.4);
+    gap: 0.7rem;
+    border-radius: 1rem;
+    padding-left: 1.4rem;
+    width: 25rem;
+    padding-top: 1rem;
+    padding-right: 3rem;
+    padding-bottom: 5rem;
+}
+.main{
+    margin-top: 1rem;
+}
+div button{
+    width: 6rem;
+    height: 3.5rem;
+    border-radius: 0.8rem;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 32px;
+}
+.grid-item{
+    margin:0;
+    padding: 0;
+}
+.theme{
+    margin-left: 17rem;
+}
+.reset {
+    /* grid-column-start:1 ;
+    grid-column-end: 3; */
+
+}
+.reset button{
+    width: 12.7rem;
+    position: absolute;
+    background-color: #a2b3e1;
+    color:white;
+}
+.equal{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.equal button{
+    width: 12.7rem;
+    position: absolute;
+    background-color: #f96c5b;
+    color:white
+}
+
+#box1{
+    opacity: 1;
+    margin-left: 0.4rem;
+    background-color: #f96c5b;
+}
+#box2{
+    opacity: 0;
+}
+#box3{
+    opacity: 0;
+    margin-right: 0.4rem;
+}
+.onscreen{
+    font-size: 43px;
+    font-weight: 700;
+}
