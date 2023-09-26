@@ -21,6 +21,8 @@ function togglefun(){
     
 
 }
+//hello
+
 function togglefun2(){
     box1.style.opacity='0';
     box2.style.opacity='1';
